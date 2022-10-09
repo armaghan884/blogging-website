@@ -1,0 +1,26 @@
+/* Button color setup */
+.button-hover{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.684);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: rgb(54, 54, 54);
+}
+/* Button hover setup */
+.button-hover:hover{
+    color: white;
+    background-color: rgb(33, 33, 33);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: white;
+}
+.button-edit{
+    background-color: white;
+    outline-color: white;
+}
+.button-edit:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    outline-color: white;
+}

@@ -1,0 +1,15 @@
+version: "3"
+services:
+    db:
+      container_name: friendsdb
+      image: mariadb:latest
+      ports:
+       - "3306:3306"  
+      environment:
+        MARIADB_ROOT_PASSWORD: root_pass
+        MARIADB_DATABASE: friends
+        MARIADB_USER: friendsdb
+        MARIADB_PASSWORD: 1234
+
+      volumes:
+         - "./sql-scripts/CreateTable.sql:/docker-entrypoint-initdb.d/1.sql"

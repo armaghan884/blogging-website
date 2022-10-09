@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/front-end/public/CSS/style.css">
+    <link rel="stylesheet" href="/front-end/public/CSS/body.css">
+    <title>Frnds - Login Page</title>
+</head>
+
+<body>
+
+
+    <section class="vh-100 main-body">
+        <div class="container">
+
+            <div class="row align-items-center">
+                <!-- Login picture column starts -->
+                <div class="col picture-logo d-lg-flex d-md-none d-sm-none d-">
+                    <div class="row"> <img src="/front-end/public/images/Frndspng.png" alt=""></div>
+                </div>
+                <!-- Login picture column starts -->
+                <!-- Login card start -->
+                <div class="col py-5 p-lg-5">
+                    <div class="card h-100 login-card">
+
+                        <div class="card-body align-content-center ">
+                            <div class="hide-title mt-2 mb-2 ">
+                                <h1 class="card-title text-center"><b>FRNDS</h1>
+                            </div>
+                            <div class="row heading-card">
+                                <h2 class="card-title">Login to your account</h2>
+                                <span class="card-subtitle mb-2 text-muted">Welcome Back!</span>
+                            </div>
+
+                            <!-- Login form start -->
+                            <form action="">
+
+                                <div class="form-row form-css">
+                                    <!-- Login email input -->
+                                    <label class="form-label" for="email">Email</label>
+                                    <input class="form-control mb-3" placeholder="Please enter your email" type="text"
+                                        id="email">
+                                    <!-- login password input -->
+                                    <label class="form-label" for="password">Password</label>
+                                    <input class="form-control mb-2" placeholder="Enter password" type=" text"
+                                        id="password">
+                                    <span class="mb-2 text-muted" style="float: right;">Forgot your password?</span>
+                                </div>
+                                <!-- login button -->
+                                <div class="form-row text-center">
+                                    <button class="btn btn-dark login-btn mt-3 mb-2" type="submit">Login</button>
+                                </div>
+                            </form>
+                            <!-- Login form end -->
+                            <div class="login-hr">
+
+                                <hr style="width: 30%; float:left">
+                                <span class="login-span">Create an account</span>
+                                <hr style="width: 30%; float:right">
+                            </div>
+                            <div class="form-row text-center">
+                                <a href="/front-end/views/signup.html" class="btn btn-dark signup-btn">Sign up</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Login card end -->
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- footer -->
+    <div class="copy-span">
+        <span> &copy; FRNDS 2022</span>
+    </div>
+
+
+
+
+
+</body>
+
+
+</html>

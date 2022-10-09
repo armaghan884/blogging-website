@@ -1,0 +1,27 @@
+/* Responsiveness settings for medium screens */
+@media only screen and (max-width: 1200px) {
+    #fade-show {
+        display: none;
+    }
+    .post-row{
+        margin: 5px;
+    }
+    .post-card {
+        margin-top: 30px;
+    }
+   
+}
+
+/* Responsiveness settings for extra small screens */
+@media only screen and (max-width: 600px) {
+    #fade-show {
+        display: none;
+    }
+    .post-row{
+        margin: 5px;
+    }
+    .post-card {
+        margin-top: 60px;
+    }
+}
+

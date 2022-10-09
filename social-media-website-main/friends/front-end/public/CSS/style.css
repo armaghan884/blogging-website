@@ -1,0 +1,100 @@
+/* Main body padding */
+.main-body{
+    margin-top: 40px;
+    padding: 10px;
+}
+/* Login btn width adjustment */
+.login-btn{
+    width: 80%;
+   
+}
+/* sign up btn width adjustment */
+.signup-btn{
+    width: 80%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+/* login form adjustment */
+.form-css{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/* Login form heading adjustment */
+.heading-card{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+/* Login divider setup */
+.login-hr
+{
+    
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+/* Login span text adjustment */
+.login-span{
+    font-size: medium; 
+    padding: 0 10px;
+    float: center;
+}
+/* Login card glass effect */
+.login-card{
+    background: rgba(255, 255, 255, 0.68);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+    border: 1px solid rgba(255, 255, 255, 0.61);
+}
+/* Login picture logo setup */
+.picture-logo{
+    border-right: 3px solid rgba(0, 0, 0, 0.303);
+}
+/* Login copyright span text adjustment */
+.copy-span{
+    text-align: center;
+    font-size: medium;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* Responsiveness settings for small screens */
+@media only screen and (max-width: 2800px) {
+    .hide-title{
+      display: none;
+    }
+    .login-hr
+    {
+    
+    margin-bottom: 10px;
+    margin-left: 6%;
+    margin-right: 6%;
+    }
+}
+
+/* Responsiveness settings for small screens */
+@media only screen and (max-width: 1400px) {
+    .hide-title{
+      display: block;
+    }
+    .login-hr{
+
+    margin-bottom: 10px;
+    margin-left: 6%;
+    margin-right: 6%;
+    }
+}
+/* Responsiveness settings for small screens */
+@media only screen and (max-width: 581px) {
+    .picture-logo{
+      display: none;
+    }
+    
+}

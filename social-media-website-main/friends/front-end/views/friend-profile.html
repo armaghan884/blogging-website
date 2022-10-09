@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Local css -->
+    <link rel="stylesheet" href="/front-end/public/CSS/navigation.css">
+    <link rel="stylesheet" href="/front-end/public/CSS/button.css">
+    <link rel="stylesheet" href="/front-end/public/CSS/body.css">
+    <link rel="stylesheet" href="/front-end/public/CSS/profile.css">
+    <link rel="stylesheet" href="/front-end/public/CSS/post.css">
+
+    <title>Frnds - Friend Profile</title>
+</head>
+
+<body>
+    <!-- NAVIGATION BAR ------------------------------------------------------------------------------------------------------------>
+    <!-- Navigation bar start -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <!-- Navigation container -->
+        <div class="container-fluid">
+            <!-- Brand Logo start -->
+            <div class="logo">
+                <a class="navbar-brand ms-2" href="#"><img class="rot"
+                        src="/front-end/public/images/icons8-wi-fi-64.png" width="32" height="32"
+                        class="d-inline-block align-text-top" />
+                    <b>FRNDS</b></a>
+            </div>
+            <!-- Brand Logo end -->
+            <!-- Toggle navigation menu start -->
+            <!-- toggle nav button start-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+
+                </span>
+            </button>
+            <!-- Toggle nav button end -->
+            <!-- toggle nav items start -->
+            <div class=" align-items-end collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <!-- home button start -->
+                    <li class="nav-item ms-2 margin-ad">
+                        <a class="nav-link btn btn-light button-hover " aria-current="page"
+                            href="/front-end/views/home.html"><i class="bi bi-house-fill"></i>
+                            Home</a>
+                    </li>
+                    <!-- home button end -->
+                    <!-- add post button start -->
+                    <li class="nav-item ms-2 margin-ad">
+                        <a class="nav-link btn btn-light button-hover" href="/front-end/views/add-post.html"><i
+                                class="bi bi-plus-square-fill me-2"></i>Add Post</a>
+                    </li>
+                    <!-- add post button end -->
+                    <!-- add friend button start -->
+                    <li class="nav-item ms-2 margin-ad"><a class="nav-link btn btn-light button-hover"
+                            href="/front-end/views/add-friend.html"><i class="bi bi-person-plus-fill me-2"></i>Add
+                            Frnds</a>
+                    </li>
+                    <!-- add friend button end -->
+                </ul>
+                <!-- Friend website search form start -->
+                <form class="d-flex" role="search" action="/front-end/views/add-friend.html">
+                    <input class="form-control me-2" type="search" placeholder="Search Frnds" aria-label="Search">
+                    <button class="btn btn-light button-hover" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+                <!-- Friend website search form end -->
+            </div>
+            <!-- toggle nav items end -->
+            <!-- Hidden responsive logo start -->
+            <div class="logo-hid">
+                <h4 class="mt-1"> <b>Frnds</b> </h4>
+            </div>
+            <!-- Hidden responsive logo end -->
+            <!-- User dropdown menu start -->
+            <div class="nav flex-nowrap align-items-center">
+
+                <li class="nav-item dropdown ms-2 margin-ad marg-ad">
+                    <!-- Dropdown button start -->
+                    <a class="nav-link btn btn-light button-hover dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-at"></i>
+                        Username
+                    </a>
+                    <!-- Dropdown button end -->
+                    <!-- Dropdown profile + settings + edit profile + friends check + sign out + about website start -->
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/front-end/views/user-profile.html"> <i
+                                    class="bi bi-person-fill me-2"></i>Profile</a>
+                        </li>
+                        <li><a class="dropdown-item" href="/front-end/views/settings.html"><i
+                                    class="bi bi-gear-fill me-2"></i>Settings</a>
+                        </li>
+                        <li><a class="dropdown-item" href="/front-end/views/edit-profile.html"><i
+                                    class="bi bi-pencil-fill me-2"></i>Edit
+                                Profile</a>
+                        </li>
+                        <li><a class="dropdown-item" href="/front-end/views/show-friends.html"><i
+                                    class="bi bi-people-fill me-2"></i>Frnds</a>
+                        </li>
+                        <li><a class="dropdown-item" href="/front-end/views/notifications.html"><i
+                                    class="bi bi-bell-fill me-2"></i>Notifications</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="/front-end/views/about-frnds.html"><i
+                                    class="bi bi-vinyl-fill me-2"></i>About
+                                Frnds</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-left me-2"></i>Sign
+                                out</a>
+                        </li>
+                    </ul>
+                    <!-- Dropdown profile + settings + edit profile + friends check + sign out + about website end -->
+                </li>
+            </div>
+            <!-- User dropwdown menu end -->
+
+        </div>
+    </nav>
+    <!-- Navigation bar end -->
+    <!-- friend profile section start -->
+    <main>
+        <div class="container">
+            <div class="row g-4 pt-2  ps-2 pe-2 post-row ms-lg-5 me-lg-5">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header align-items-center">
+                            <h4 class=" text-center mt-2 text-muted">@faizanjavair</h4>
+                        </div>
+                        <div class="card-body align-items-center p-2 m-0">
+                            <div class="bg-dark rounded-4">
+                                <div class="profile">
+                                    <div class="profile-story">
+                                        <img class="rounded-circle profile-image"
+                                            src="/front-end/public/images/frnds2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <h5 class="card-title"> <b>Faizan Javair</b> </h5>
+                                <span class="card-subtitle text-muted">Web Developer</span>
+                            </div>
+
+                            <div class=" card-text text-center pt-2 ms-5 me-5">
+                                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis vero laborum
+                                    sit libero reprehenderit? Excepturi assumenda dolore velit voluptatibus labore,
+                                    impedit placeat hic, vitae facere molestiae perferendis corrupti, molestias laborum.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Post's row start -->
+            <div class="row g-4  ps-2 pe-2 post-row ms-lg-5 me-lg-5">
+                <!-- Posts column Start -->
+                <div class="col">
+                    <!-- Friends posts With pictures start -->
+                    <div class="card mt-2 mb-2 w-100 post-card  pt-2">
+                        <!-- post header start-->
+                        <div class="card-header">
+                            <!-- post name + user picture start -->
+                            <div class=" d-flex align-items-center justify-content-between pb">
+
+                                <div class="d-flex align-items-center">
+                                    <!-- User Picture start -->
+                                    <div class=" avatar avatar-story me-2">
+                                        <a href="#"><img class="avatar-image rounded-circle"
+                                                src="/front-end/public/images/frnds2.png" alt=""></a>
+                                    </div>
+                                    <!-- User Picture end -->
+                                    <!-- User name + title start -->
+                                    <div>
+                                        <div class="nav nav-divider">
+                                            <h6 class="card-title">Faizan Javair</h6>
+
+                                        </div>
+                                        <span class="mb-0 text-muted small">Web Developer</span>
+
+                                    </div>
+                                    <!-- User name + title start -->
+                                </div>
+                            </div>
+                            <!-- post name + user picture end -->
+                        </div>
+                        <!-- post header end-->
+                        <!-- Post text + img start -->
+                        <div class="card-body bg-light">
+                            <p class="mb-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero quia ea a,
+                                minus
+                                soluta! Iure nulla sequi mollitia, enim iusto quasi accusamus laboriosam perspiciatis
+                                minima aliquid aperiam commodi dignissimos.</p>
+                            <img class=" card-img" src="/front-end/public/images/frnds2.png" alt="">
+                        </div>
+                        <!-- Post text + img end -->
+                        <!-- post footer upvote + down vote + report start-->
+                        <div class="card-footer">
+                            <div class=" mt-2 mb-2">
+                                <ul class="nav nav-fill nav-stack small py-1">
+                                    <li class=" nav-item">
+                                        <a class="btn btn-dark" href="#"><i id="arrow-up"
+                                                class="bi bi-hand-thumbs-up"></i> 3 Likes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="btn btn-dark" id="report" data-bs-toggle="modal"
+                                            data-bs-target="#report-modal" href="#"><i id="flag" class="bi bi-flag"></i>
+                                            Report</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- post footer upvote + down vote + report end-->
+                    </div>
+                    <!-- Friends post with picture end -->
+
+                    <!-- Friends posts With pictures start -->
+                    <div class="card mt-2 mb-2 w-100 post-card  pt-2">
+                        <!-- post header start-->
+                        <div class="card-header">
+                            <!-- post name + user picture start -->
+                            <div class=" d-flex align-items-center justify-content-between pb">
+
+                                <div class="d-flex align-items-center">
+                                    <!-- User Picture start -->
+                                    <div class=" avatar avatar-story me-2">
+                                        <a href="#"><img class="avatar-image rounded-circle"
+                                                src="/front-end/public/images/frnds2.png" alt=""></a>
+                                    </div>
+                                    <!-- User Picture end -->
+                                    <!-- User name + title start -->
+                                    <div>
+                                        <div class="nav nav-divider">
+                                            <h6 class="card-title">Faizan Javair</h6>
+
+                                        </div>
+                                        <span class="mb-0 text-muted small">Web Developer</span>
+
+                                    </div>
+                                    <!-- User name + title start -->
+                                </div>
+                            </div>
+                            <!-- post name + user picture end -->
+                        </div>
+                        <!-- post header end-->
+                        <!-- Post text + img start -->
+                        <div class="card-body bg-light">
+                            <p class="mb-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero quia ea a,
+                                minus
+                                soluta! Iure nulla sequi mollitia, enim iusto quasi accusamus laboriosam perspiciatis
+                                minima aliquid aperiam commodi dignissimos.</p>
+                            <img class=" card-img" src="" alt="">
+                        </div>
+                        <!-- Post text + img end -->
+                        <!-- post footer upvote + down vote + report start-->
+                        <div class="card-footer">
+                            <div class=" mt-2 mb-2">
+                                <ul class="nav nav-fill nav-stack small py-1">
+                                    <li class=" nav-item">
+                                        <a class="btn btn-dark" href="#"><i id="arrow-up"
+                                                class="bi bi-hand-thumbs-up"></i> 3 Likes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="btn btn-dark" id="report" data-bs-toggle="modal"
+                                            data-bs-target="#report-modal" href="#"><i id="flag" class="bi bi-flag"></i>
+                                            Report</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- post footer upvote + down vote + report end-->
+                    </div>
+                    <!-- Friends post with picture end -->
+                </div>
+                <!--Report Modal -->
+                <div class="modal fade" id="report-modal" tabindex="-1" aria-labelledby="reportModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="reportModalLabel">Report</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Do you really want to report?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn button-hover" data-bs-dismiss="modal">No</button>
+                                <button type="button" id="reported" class="btn button-hover"><a
+                                        class="button-hover-post" href="#">Yes</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Posts column end -->
+            </div>
+            <!-- post row end  -->
+        </div>
+
+
+    </main>
+    <!-- friend profile section end -->
+</body>
+
+</html>

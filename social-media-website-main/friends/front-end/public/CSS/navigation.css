@@ -1,0 +1,39 @@
+/* Navigation background color */
+.nav-header{
+    background-color: white;
+}
+/* Rotating logo image in the navigation bar */
+.rot{
+    transform: rotate(25deg);
+}
+/* Responsiveness settings for larger screens */
+@media only screen and (max-width: 2600px) {
+    .logo-hid{
+       display: none;
+    }
+   }
+  
+/* Responsiveness settings for small screens */
+@media only screen and (max-width: 995px) {
+     .margin-ad{
+       margin-bottom: 3px;
+     }
+     .marg-ad{
+       margin-top: 5px;
+     }
+     .logo{
+       display: none;
+    }
+    .logo-hid{
+       display: grid;
+       margin-top: 3px;
+      }
+   .search{
+       margin-top: 3px;
+       margin-bottom: 6px;
+   }
+   
+}
+.h1{
+  margin-top: 0%;
+}

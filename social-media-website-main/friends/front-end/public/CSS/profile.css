@@ -1,0 +1,24 @@
+/* Avatar img adjustment */
+.profile{
+    height: 30%;
+    width: 30%;
+    align-items: center;
+    flex-shrink: 0 !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Avatar padding adjustment */
+.profile-story {
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 10px;
+    z-index: 1;
+}
+/* Avatar image width setup */
+.profile-image{
+    width: 100%;
+    height: 100%;
+}
+
